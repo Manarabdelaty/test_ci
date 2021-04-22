@@ -46,9 +46,8 @@ jobs:
 
       - name: Update Caravel Lite
         run: |
-          git clone --depth=1 https://github.com/Manarabdelaty/caravel-lite.git
+          mkdir -p caravel-lite
           cd caravel-lite
-          rm -rf caravel-lite/*
           git init
           git checkout -b main
           git pull https://github.com/efabless/caravel master
