@@ -45,7 +45,7 @@ jobs:
         with:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             name: id_rsa # optional
-            known_hosts: ${{ secrets.KNOWN_HOSTS }}
+            known_hosts: unnecessary            
             
       - name: Install git-filter-repo
         run: pip install git-filter-repo
